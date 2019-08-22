@@ -52,12 +52,6 @@
                             window.console.log(data);
                             var ref = database.ref("Feedback")
                             ref.push(data);
-                            $(document).ready(function(){
-                 $("button").click(function(){
-                    $("#load").fadeIn(1000).delay(2000).fadeOut(1000);
-                    $('head').append('<meta http-equiv="refresh" content="5;url=https://navaneethnavi.github.io/feedback/thankyou.html"/>');
-                })
-            })
                         }
                 </script>
         <div class="container">
