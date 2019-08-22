@@ -52,7 +52,8 @@
                             window.console.log(data);
                             var ref = database.ref("Feedback")
                             ref.push(data);
-                            window.location.replace('https://navaneethnavi.github.io/feedback/');
+                            var url= "https://navaneethnavi.github.io/feedback/"; 
+                            window.location = url; 
                         }
                 </script>
         <div class="container">
@@ -99,7 +100,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-12 form-group">
-                                <button type="submit" onclick ="submitfeedback()" class="btn btn-lg btn-warning btn-block" >Submit Feedback</button>
+                                <button type="submit" onclick ="submitfeedback()" class="btn btn-lg btn-warning btn-block" >Submit-Feedback</button>
                             </div>
                         </div>
                     </form>
