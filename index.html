@@ -53,7 +53,10 @@
                             var ref = database.ref("Feedback")
                             ref.push(data);
                             alert("ThankYou");
-                            <a href="./thankyou.html">Goto Thank You page</a>
+                            if (window.confirm('Click "ok" to redirected to thank you page . Cancel will load this website ')) 
+                            {
+                            window.location.href='https://navaneethnavi.github.io/feedback/thankyou.html';
+                            };
                             <!--window.location.replace('https://navaneethnavi.github.io/feedback/thankyou.html');-->
                         }
                 </script>
