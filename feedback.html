@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Feedback Form </title>
+        <title>Feedback-Form </title>
         <!-- Latest compiled and minified CSS -->
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" > -->
         <link rel="stylesheet" href="bootstrap.min.css" >
@@ -53,8 +53,12 @@
                             var ref = database.ref("Feedback")
                             ref.push(data);
                             alert("Thankyou for your valuable feedback");
-                            window.location = 'https://navaneethnavi.github.io/feedback/thankyou.html';
+                            redirect()
                         }
+                    function redirect(){
+                        window.location = 'https://navaneethnavi.github.io/feedback/thankyou.html';
+                    }
+                        
                 </script>
         <div class="container">
             <div class="imagebg"></div>
