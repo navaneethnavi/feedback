@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>The Feedback-Form </title>
+        <title>Feedback-Form </title>
         <!-- Latest compiled and minified CSS -->
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" > -->
         <link rel="stylesheet" href="bootstrap.min.css" >
@@ -52,12 +52,12 @@
                             window.console.log(data);
                             var ref = database.ref("Feedback")
                             ref.push(data);
-                            
-                            redirect()
+                            alert("Thankyou for your valuable feedback");
+              
                         }
-                    alert("test");
+ 
                     function redirect(){
-                        alert("Thankyou for your valuable feedback");
+                        
                         window.location = 'https://navaneethnavi.github.io/feedback/thankyou.html';
                     }
                         
@@ -107,6 +107,7 @@
                         <div class="row">
                             <div class="col-sm-12 form-group">
                                 <button type="submit" formmethod="get" onclick ="submitfeedback()" class="btn btn-lg btn-warning btn-block" >Submit Feedback</button>
+                                 <a href="https://navaneethnavi.github.io/feedback/thankyou.html">Visit!</a> 
                             </div>
                         </div>
                     </form>
